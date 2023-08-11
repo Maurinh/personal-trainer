@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap");
+@import "/src/css/media.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background-color: #000000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  z-index: 1;
+}
+
+section.home {
+  background-image: linear-gradient(#242424ec, #242424e7),
+  url("/src/img/crossfit.jpg");
+  background-position: static;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.logo {
+  margin-right: auto;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.logo span {
+  color: #52b0ff;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8vh;
+  padding: 0 90px;
+  box-shadow: 0 0.1rem 0.3rem rgba(204, 204, 204, 0.316);
+  width: 100%;
+  background: #242424;
+  transition: all 0.5s;
+  position: fixed;
+}
+
+.navigation ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  list-style: none;
+  justify-content: center;
+}
+
+.navigation ul li a {
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 0.5s;
+  color: #fff;
+}
+
+.navigation ul li a:hover {
+  color: #52b0ff;
+}
+
+.navigation i {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.menu {
+  cursor: pointer;
+  display: none;
+}
+
+.menu .bar {
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 3px;
+  background: #52b0ff;
+  margin: 5px auto;
+  transition: all 0.3s;
+}
+
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3) {
+  background: #52b0ff;
+}
+
+
+.list-emotional {
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  justify-items: center;
+  display: flex;
+}
+
+.list-emotional {
+  display: grid;
+  background: #b9b9b9;
+  border-radius: 80px;
+  padding: 50px;
+}
+
+ .container-planos {
+  width: 100%;
+  display: flex;
+}
+
+.js .js-section-scroll.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.container {
+  padding: 120px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+section.about {
+  background-image: linear-gradient(#242424ec, #242424e7),
+   url("/src/img/agachamento.jpg");
+  background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 100vh;
+ color: #fff;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ /* padding-top: 30vh; */
+}
+
+section about .container__about {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #007bff;
+ }
+
+ .container__about img {
+  cursor: pointer;
+  transition: 0.3s ease-in;
+ }
+
+ section.about .container__about {
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+ }
+
+ .tecnologias img:hover {
+  transform: scale(1.1);
+ }
+
+ section.about .container__about img {
+  margin: 5px;
+ }
+
+ .container__about h1 {
+  color: rgba(255, 255, 255, 0.671);
+  font-weight: 500;
+  margin-bottom: 20px;
+
+ }
+
+ .container__about p {
+  color: #d9edffa4;
+  font-weight: 300;
+  max-width: 600px;
+ }
+
+ .container__about h2 {
+  color: rgba(255, 255, 255, 0.671);
+  font-weight: 500;
+  margin-top: 20px;
+ }
+
+ .container__about img {
+  max-width: 50px;
+ }
+
+
+ section .content {
+  display: flex;
+  justify-content: center;
+  padding: 90px;
+  align-items: center;
+  height: 100%;
+}
+
+.infos p {
+  max-width: 300px;
+}
+
+.infos h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #52b0ff;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.infos h2 {
+  font-size: 29px;
+  line-height: 52px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.infos span {
+  font-size: 29px;
+  font-weight: 600;
+  color: #d9edffc5;
+  line-height: 52px;
+}
+
+.infos p {
+  line-height: 25px;
+  font-weight: 300;
+  max-width: 600px;
+  color: #d9edffc5;
+}
+
+.infos input[type="button"] {
+  margin-top: 10px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: #3183bf;
+  width: 245px;
+  height: 57px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.whats-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-image: url("./src/svg/whats.svg");
+}
+
+@keyframes whatsapp-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+footer {
+  background-color: #000;
+  padding: 25px;
+}
+
+.social-icons {
+  text-align: center;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+}
+
+.direitos-reservados  {
+  text-align: center;
+  color: #fff;
+}
+
+input[type="button"]:active {
+  transform: scale(1.1);
+}
+
+.image img {
+  max-width: 200px;
+  border-radius: 10%;
+}
+
+.container {
+  background-image:
+    url("/src/img/tenis.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 30vh; */
+}
+
+.container-vantagens h3 {
+  margin-bottom: 60px;
+  position: relative;
+}
+
+h3 {
+ font-size: 2.5rem;
+ line-height: 3rem;
+ font-weight: 400;
+}
+
+.container-vantagens h3::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  clip-path: polygon(0% 0%, 0 36%, 1% 36%, 1% 1%, 17% 1%, 17% 0);
+  width: 300px;
+  height: 300px;
+  background: #a40626;
+  left: -60px;
+  top: 35px;
+}
+
+::before {
+  box-sizing: inherit;
+}
+
+.vantagens-list {
+  display: grid;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.vantagens-list ul li+li {
+  margin-top: 30px;
+}
+
+.vantagens-list ul li {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  grid-gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.vantagens-list ul li h2 {
+  text-align: right;
+  color: #007bff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 1.25rem;
+  opacity: 0.95;
+  font-style: inherit;
+  line-height: inherit;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+ margin-inline-end: 0px;
+}
+
+.vantagens-img img {
+  width: 150px;
+  border-radius: 20px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+
+
+
